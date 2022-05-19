@@ -6,7 +6,6 @@ import Apps from './Components/Apps/Apps.jsx'
 import Plans from './Components/Plans/Plans.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Footer from './Components/Footer/Footer.jsx'
-import './App.css';
 
 function App() {
   return (
