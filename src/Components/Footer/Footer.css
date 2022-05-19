@@ -1,0 +1,13 @@
+.footer-wrapper{
+  display: flex;
+  height: 103px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-info{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #293145;
+}

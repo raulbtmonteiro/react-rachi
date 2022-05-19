@@ -1,0 +1,33 @@
+.home{
+  background-color: #EFF8FF;
+}
+
+.home-wrapper {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.home-info {
+  max-width: 574px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 60.48px;
+  color: #293145;
+}
+
+.home-button {
+  margin-top: 50px;
+  height: 56px;
+  width: 200px;
+  background-color: #0f9afe;
+  box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}

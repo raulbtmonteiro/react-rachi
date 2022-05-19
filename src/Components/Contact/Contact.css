@@ -1,0 +1,58 @@
+.contact {
+  height: 382px;
+  background-image: url('./contact_background.png');
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-title{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.contact-description {
+  max-width: 528px;
+  margin: 16px auto 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #DBDBDB;
+}
+
+.contact-submit{
+  margin-top: 90px;
+}
+
+.contact-submit input{
+  width: 300px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;;
+
+}
+
+.contact-submit input::placeholder{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.contact-submit button {
+  margin-left: 40px;
+  width: 118px;
+  height: 38px;
+  background: #0F9AFE;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
