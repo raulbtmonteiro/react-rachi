@@ -10,7 +10,7 @@ function Home(props) {
           <h2 className='home-title'>{props.title}</h2>
           <button className='home-button'>Cadastrar-se</button>
         </div>
-        <img src={home_img} alt=''></img>
+        <img className='home-img' src={home_img} alt=''></img>
       </div>
     </div>
   );

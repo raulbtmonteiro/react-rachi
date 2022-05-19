@@ -15,16 +15,9 @@ function App() {
       <main>
         <Home
           title='Rachi, é tudo que você precisa em um só lugar.'
-          img_ul=''
         />
-        <Functionality
+        <Functionality 
           title='Como funciona'
-          car1_title='Crie conexões'
-          car1_description='Lorem ipsum dolor sit amet, consecteteu.'
-          car2_title='100% gratuito'
-          car2_description='Lorem ipsum dolor sit amet, consecteteu.'
-          car3_title='Compartilhamento'
-          car3_description='Lorem ipsum dolor sit amet, consecteteu.'
         />
         <Apps
           title='Baixe nosso app para desfrutar mais!'
@@ -33,15 +26,6 @@ function App() {
         <Plans
           title='Nossos Planos'
           description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
-          planCard1Title='Bronze'
-          planCard1Price='28'
-          planCard1Description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
-          planCard2Title='Prata'
-          planCard2Price='57'
-          planCard2Description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
-          planCard3Title='Ouro'
-          planCard3Price='94'
-          planCard3Description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
         />
         <Contact
           title='Contato'

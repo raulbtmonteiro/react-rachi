@@ -40,6 +40,10 @@
 
 @media screen and (max-width: 940px) {
 
+  .home-img{
+    width: 80%;
+  }
+
   .home-wrapper {
     width: 100%;
     flex-direction: column;

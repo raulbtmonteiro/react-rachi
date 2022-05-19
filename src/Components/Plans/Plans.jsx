@@ -1,14 +1,36 @@
 
+import { useState } from 'react';
 import './Plans.css';
 
-function PlanCard (props) {
+function PlanCard () {
+
+  const[plans, setPlans] = useState([
+    {
+      title: 'Bronze',
+      price: '28',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
+    },
+    {
+      title: 'Prata',
+      price: '57',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
+    },
+    {
+      title: 'Ouro',
+      price: '94',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
+    }
+  ])
+
   return (
-    <div className='plan-card'>
-      <h3 className='plan-card-title'>{props.title}</h3>
-      <h2 className='plan-card-price'><p className='plan-card-sifrao'>R$</p>{props.price}<p className='plan-card-month'>/mês</p></h2>
-      <p className='plan-card-description'>{props.description}</p>
-      <button className='plan-card-button'>Assinar</button>
-    </div>
+    plans.map( (index) => (
+      <div className='plan-card'>
+        <h3 className='plan-card-title'>{index.title}</h3>
+        <h2 className='plan-card-price'><p className='plan-card-sifrao'>R$</p>{index.price}<p className='plan-card-month'>/mês</p></h2>
+        <p className='plan-card-description'>{index.description}</p>
+        <button className='plan-card-button'>Assinar</button>
+      </div>
+    ))
   )  
 }
 
@@ -19,21 +41,7 @@ function Plans(props) {
         <h2 className='plans-title'>{props.title}</h2>
         <p className='plans-description'>{props.description}</p>
         <div className='plans-display'>
-          <PlanCard
-            title={props.planCard1Title}
-            price={props.planCard1Price}
-            description={props.planCard1Description}
-          />
-          <PlanCard
-            title={props.planCard2Title}
-            price={props.planCard2Price}
-            description={props.planCard2Description}
-          />
-          <PlanCard
-            title={props.planCard3Title}
-            price={props.planCard3Price}
-            description={props.planCard3Description}
-          />
+          <PlanCard />
         </div>      
       </div>
     </div>
