@@ -1,12 +1,12 @@
 import React, {Fragment} from 'react'
-import Header from './Components/Header/Header.js'
+import Header from './Components/Header/Header.jsx'
 import logo from './Group_33553.png';
-import Home from './Components/Home/Home.js'
-import Functionality from './Components/Functionality/Functionality.js'
-import Apps from './Components/Apps/Apps.js'
-import Plans from './Components/Plans/Plans.js'
-import Contact from './Components/Contact/Contact.js'
-import Footer from './Components/Footer/Footer.js'
+import Home from './Components/Home/Home.jsx'
+import Functionality from './Components/Functionality/Functionality.jsx'
+import Apps from './Components/Apps/Apps.jsx'
+import Plans from './Components/Plans/Plans.jsx'
+import Contact from './Components/Contact/Contact.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 import './App.css';
 
 function App() {
