@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react'
 import Header from './Components/Header/Header.jsx'
-import logo from './Group_33553.png';
 import Home from './Components/Home/Home.jsx'
 import Functionality from './Components/Functionality/Functionality.jsx'
 import Apps from './Components/Apps/Apps.jsx'
@@ -12,9 +11,7 @@ import './App.css';
 function App() {
   return (
     <Fragment>
-      <Header
-        logo={logo}        
-      />
+      <Header />
       <main>
         <Home
           title='Rachi, é tudo que você precisa em um só lugar.'

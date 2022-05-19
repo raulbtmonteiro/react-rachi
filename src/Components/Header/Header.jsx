@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import logo from './Group_33553.png';
+import menu from './menuhamburguer.svg'
 import './Header.css';
 
 function RenderNavItens(){
 
-  const[navItens, setNavItens] = useState([ 'Funcionalidades' , 'App' , 'Planos' , 'Contato' ])
+  const navItens = [ 'Funcionalidades' , 'App' , 'Planos' , 'Contato' ];
 
   return(
     navItens.map( (index) => (
@@ -14,14 +16,25 @@ function RenderNavItens(){
 
 function Header(props) {
 
+  const[navbarShow, setNavbarShow] = useState(false);
+
+  const changeNavbarShow = () => {
+    if(navbarShow){
+      return setNavbarShow(false)
+    } else {
+      return setNavbarShow(true)
+    }
+  }
+
   return (
     <header>
       <div className='header-wrapper'>
-        <img className='logo' src={props.logo}></img>
+        <img className='logo' src={logo} alt='teste'></img>
         <nav>
-          <ul id='nav-bar'>
-            <RenderNavItens />
-          </ul>
+          { navbarShow 
+            ? <ul id='nav-bar'><RenderNavItens /></ul>
+            : <img src={menu} alt='teste' onClick={() => changeNavbarShow()}></img>
+          }
         </nav>
       </div>
     </header>

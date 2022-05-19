@@ -40,3 +40,16 @@
   line-height: 26px;
   margin-top: 16px;
 }
+
+@media screen and (max-width: 720px) {
+
+  .functionality-display {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+  }
+
+  .functionality-wrapper {
+    height: 100%
+  }
+}

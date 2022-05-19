@@ -16,7 +16,7 @@ function Apps(props) {
             <button className='apps-button'><img src={app_store}></img></button>
           </div>
         </div>
-        <img src={notifications} alt=''></img>
+        <img className='container-img' src={notifications} alt=''></img>
       </div>      
     </div>
   );

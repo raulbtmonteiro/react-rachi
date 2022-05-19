@@ -101,3 +101,25 @@
   box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
   border-radius: 50px;
 }
+
+@media screen and (max-width: 1170px) {
+
+  .plans {
+    height: 100%;
+  }
+
+  .plans-display {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .plan-card{
+    margin: 0 auto;
+  }
+
+  .plans-description{
+    margin-bottom: 20px;
+  }
+}
