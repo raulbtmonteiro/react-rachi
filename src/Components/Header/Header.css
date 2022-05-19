@@ -28,3 +28,25 @@ header {
   line-height: 22px;
   color: #6E7275;
 }
+
+@media screen and (max-width: 720px) {
+
+  #nav-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .nav-bar-item {
+    margin-left: 66px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6E7275;
+  }
+
+
+}

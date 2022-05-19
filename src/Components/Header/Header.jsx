@@ -1,24 +1,26 @@
+import { useState } from 'react';
 import './Header.css';
 
-const navItens = [ 'Funcionalidades' , 'App' , 'Planos' , 'Contato' ]
+function RenderNavItens(){
+
+  const[navItens, setNavItens] = useState([ 'Funcionalidades' , 'App' , 'Planos' , 'Contato' ])
+
+  return(
+    navItens.map( (index) => (
+      <li className='nav-bar-item'>{index}</li>
+    ))
+  )
+}
 
 function Header(props) {
 
-  const RenderNavItens = ({itens}) => {
-    return(
-      itens.map( (index) => (
-        <li className='nav-bar-item'>{index}</li>
-      ))
-    )
-  }
- 
   return (
     <header>
       <div className='header-wrapper'>
         <img className='logo' src={props.logo}></img>
         <nav>
           <ul id='nav-bar'>
-            <RenderNavItens itens={navItens}/>
+            <RenderNavItens />
           </ul>
         </nav>
       </div>
