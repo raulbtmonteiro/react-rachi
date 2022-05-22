@@ -29,6 +29,10 @@ header {
   color: #6E7275;
 }
 
+#menu-off{
+  display: none;
+}
+
 @media screen and (max-width: 1170px) {
   .header-wrapper{
     width: 100%;
@@ -40,6 +44,22 @@ header {
 @media screen and (max-width: 720px) {
 
   #nav-bar {
+    display: none;
+  }
+
+  .nav-bar-item {
+    margin-left: 10px;
+    line-height: 50px;
+    color: #6E7275;
+  }
+
+  #menu-off{
+    display: inline;
+  }
+
+  #nav-bar-responsive{
+    display: flex;
+    list-style-type: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -49,12 +69,5 @@ header {
     background-color: white;
     border-radius: 10px;
   }
-
-  .nav-bar-item {
-    margin-left: 10px;
-    line-height: 50px;
-    color: #6E7275;
-  }
-
 
 }

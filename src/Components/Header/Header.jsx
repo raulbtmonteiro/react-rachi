@@ -1,7 +1,13 @@
 import { useState } from 'react';
+import styled from 'styled-components';
 import logo from './Group_33553.png';
 import menu from './menuhamburguer.svg'
 import './Header.css';
+
+const Menu = styled.nav`
+  background-color: red
+`;
+
 
 function RenderNavItens(){
 
@@ -16,14 +22,14 @@ function RenderNavItens(){
 
 function Header(props) {
 
-  const[navbarShow, setNavbarShow] = useState(false);
+  const[navbarShow, setNavbarShow] = useState(true);
+  const[menuShow, setMenuShow] = useState(false);
 
-  const changeNavbarShow = () => {
-    if(navbarShow){
-      return setNavbarShow(false)
-    } else {
-      return setNavbarShow(true)
-    }
+  const ToggleMenu = () => {
+    return(
+      setNavbarShow(!navbarShow),
+      setMenuShow(!menuShow)
+    )
   }
 
   return (
@@ -31,10 +37,8 @@ function Header(props) {
       <div className='header-wrapper'>
         <img className='logo' src={logo} alt='teste'></img>
         <nav>
-          { navbarShow 
-            ? <ul id='nav-bar'><RenderNavItens /></ul>
-            : <img src={menu} alt='teste' onClick={() => changeNavbarShow()}></img>
-          }
+          <ul id={navbarShow ? 'nav-bar' : 'nav-bar-responsive' }><RenderNavItens /></ul>
+          <img id={menuShow ? 'menu-on' : 'menu-off' } src={menu} alt='teste' onClick={() => ToggleMenu()}></img>
         </nav>
       </div>
     </header>
