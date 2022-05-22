@@ -25,7 +25,7 @@ function Icons() {
 
   return (
     iconsArray.map( (item) => (
-      <div className='icon'>
+      <div key={item.title} className='icon'>
         <img className='icon-image' src={item.img_url} alt='' />
         <h5 className='icon-title'>{item.title}</h5>
         <p className='icon-description'>{item.description}</p>

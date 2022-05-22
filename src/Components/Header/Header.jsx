@@ -1,44 +1,51 @@
 import { useState } from 'react';
-import styled from 'styled-components';
 import logo from './Group_33553.png';
 import menu from './menuhamburguer.svg'
 import './Header.css';
-
-const Menu = styled.nav`
-  background-color: red
-`;
-
 
 function RenderNavItens(){
 
   const navItens = [ 'Funcionalidades' , 'App' , 'Planos' , 'Contato' ];
 
   return(
-    navItens.map( (index) => (
-      <li className='nav-bar-item'>{index}</li>
+    navItens.map( (item) => (
+      <li key={item} className='nav-bar-item'>{item}</li>
     ))
   )
 }
 
-function Header(props) {
+function Hamburger(){
+  return(
+    <div className='hamburger-menu' >
+      <div />
+      <div />
+      <div />
+    </div>
+  )
+}
 
-  const[navbarShow, setNavbarShow] = useState(true);
-  const[menuShow, setMenuShow] = useState(false);
+function Header() {
+
+  const[navbarShow, setNavbarShow] = useState(false);
 
   const ToggleMenu = () => {
-    return(
-      setNavbarShow(!navbarShow),
-      setMenuShow(!menuShow)
-    )
+    setNavbarShow(!navbarShow);
   }
 
   return (
     <header>
       <div className='header-wrapper'>
-        <img className='logo' src={logo} alt='teste'></img>
+        <img className='logo' src={logo} alt='teste' />
         <nav>
-          <ul id={navbarShow ? 'nav-bar' : 'nav-bar-responsive' }><RenderNavItens /></ul>
-          <img id={menuShow ? 'menu-on' : 'menu-off' } src={menu} alt='teste' onClick={() => ToggleMenu()}></img>
+          <ul className='nav-bar' ><RenderNavItens /></ul>
+          <ul className={navbarShow ? 'nav-bar-responsive' : 'responsive-off'} ><RenderNavItens /></ul>
+          <div className={navbarShow ? 'overlay' : 'overlay-off'} onClick={() => ToggleMenu()}/>
+          <div className='hamburger-menu' onClick={() => ToggleMenu()}>
+            <div />
+            <div />
+            <div />
+          </div>
+          {/*<div className='hamburger' onClick={() => ToggleMenu()} ><img  src={menu} alt='teste' /></div>}*/}
         </nav>
       </div>
     </header>
