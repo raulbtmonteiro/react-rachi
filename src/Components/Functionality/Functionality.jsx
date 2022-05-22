@@ -1,5 +1,5 @@
 import conection from './Group.png';
-import security from './carbon_security.png';
+import security from '../../../public/images/carbon-security.png';
 import share from './heroicons-outline_emoji-happy.png';
 import './Functionality.css';
 
