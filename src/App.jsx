@@ -9,32 +9,17 @@ import Footer from './Components/Footer/Footer.jsx'
 
 function App() {
   return (
-    <Fragment>
+    <>
       <Header />
       <main>
-        <Home
-          title='Rachi, é tudo que você precisa em um só lugar.'
-        />
-        <Functionality 
-          title='Como funciona'
-        />
-        <Apps
-          title='Baixe nosso app para desfrutar mais!'
-          description='Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.'
-        />
-        <Plans
-          title='Nossos Planos'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
-        />
-        <Contact
-          title='Contato'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.'
-        />
+        <Home />
+        <Functionality />
+        <Apps />
+        <Plans />
+        <Contact />
       </main>
-      <Footer
-        title='Rachi - Todos os direitos reservados.'
-      />
-    </Fragment>    
+      <Footer />
+    </>    
   );
 }
 

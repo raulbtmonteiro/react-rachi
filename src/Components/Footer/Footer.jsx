@@ -1,11 +1,11 @@
 
 import './Footer.css';
 
-function Footer(props) {
+function Footer() {
   return (
-    <div className="footer-wrapper">
-      <h6 className='footer-info'>{props.title}</h6>
-    </div>
+    <footer className="footer-wrapper">
+      <h6 className='footer-info'>Rachi - Todos os direitos reservados.</h6>
+    </footer>
   );
 }
 

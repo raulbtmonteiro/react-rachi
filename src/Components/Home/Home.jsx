@@ -2,17 +2,17 @@
 import home_img from './home_img.png';
 import './Home.css';
 
-function Home(props) {
+function Home() {
   return (
-    <div className='home'>
+    <section className='home'>
       <div className='home-wrapper'>
         <div className='home-info'>
-          <h2 className='home-title'>{props.title}</h2>
+          <h2 className='home-title'>Rachi, é tudo que você precisa em um só lugar.</h2>
           <button className='home-button'>Cadastrar-se</button>
         </div>
-        <img className='home-img' src={home_img} alt=''></img>
+        <img className='home-img' src={home_img} alt='' />
       </div>
-    </div>
+    </section>
   );
 }
 
