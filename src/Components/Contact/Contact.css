@@ -56,3 +56,21 @@
   line-height: 22px;
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 720px) {
+
+  .contact-description{
+    max-width: 85%;
+  }
+
+  .contact-submit{
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact-submit button {
+    display: block;
+    margin: 1em auto 0 auto;
+  }
+}

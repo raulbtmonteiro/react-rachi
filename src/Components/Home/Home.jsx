@@ -10,7 +10,7 @@ function Home() {
           <h2 className='home-title'>Rachi, é tudo que você precisa em um só lugar.</h2>
           <button className='home-button'>Cadastrar-se</button>
         </div>
-        <img className='home-img' src={home_img} alt='' />
+        <img className='home-img' src={home_img} alt='Pessoa utilizando o notebook ao ar livre' />
       </div>
     </section>
   );

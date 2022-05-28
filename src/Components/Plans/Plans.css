@@ -116,10 +116,12 @@
   }
 
   .plan-card{
+    max-width: 85%;
     margin: 0 auto;
   }
 
   .plans-description{
+    max-width: 85%;
     margin-bottom: 20px;
   }
 }
