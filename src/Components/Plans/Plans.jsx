@@ -25,7 +25,7 @@ function PlanCard () {
     plans.map( (item) => (
       <div key={item.title} className='plan-card'>
         <h3 className='plan-card-title'>{item.title}</h3>
-        <h2 className='plan-card-price'><p className='plan-card-sifrao'>R$</p>{item.price}<p className='plan-card-month'>/mês</p></h2>
+        <h4 className='plan-card-price'><p className='plan-card-sifrao'>R$</p>{item.price}<p className='plan-card-month'>/mês</p></h4>
         <p className='plan-card-description'>{item.description}</p>
         <button className='plan-card-button'>Assinar</button>
       </div>
