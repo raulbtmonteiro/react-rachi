@@ -45,16 +45,22 @@
   border-radius: 8px;
 }
 
+.plan-card-favorite {
+  width: 370px;
+  height: 471px;
+  background: #293145;
+  border-radius: 8px;
+}
+
 .plan-card-title{
   margin-top: 56px;
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-  color: #293145;
-  margin-bottom: 59px;
 }
 
-.plan-card h4, .plan-card h4 p {
+.plan-card h4, .plan-card h4 p,
+.plan-card-favorite h4, .plan-card-favorite h4 p {
   display: inline-block;
 }
 
@@ -62,14 +68,12 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  color: #293145;
 }
 
 .plan-card-price{
   font-weight: 700;
   font-size: 50px;
   line-height: 59px;
-  color: #293145;
   margin-bottom: 47px;
 }
 
@@ -77,8 +81,51 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
+}
+
+.plan-card .plan-card-sifrao,
+.plan-card .plan-card-price,
+.plan-card .plan-card-month,
+.plan-card .plan-card-title{
   color: #293145;
 }
+
+.plan-card-favorite .plan-card-sifrao,
+.plan-card-favorite .plan-card-price,
+.plan-card-favorite .plan-card-month,
+.plan-card-favorite .plan-card-title{
+  color: #FFFFFF;
+}
+
+.plan-card .plan-card-title{
+  margin-bottom: 59px;;
+}
+
+.plan-card-favorite .plan-card-title{
+  margin-bottom: 14px;;
+}
+
+.isfavorite-show{
+  display: block;
+  background-color:#0F9AFE;
+  width: 164px;
+  height: 27px;
+  margin: 0 auto 14px;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 32px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+}
+
+.isfavorite-notshow{
+  display: none;
+}
+
 
 .plan-card-description{
   max-width: 300px;
@@ -115,7 +162,7 @@
     justify-content: center;
   }
 
-  .plan-card{
+  .plan-card, .plan-card-favorite{
     max-width: 85%;
     margin: 0 auto;
   }
