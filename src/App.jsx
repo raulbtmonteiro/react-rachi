@@ -1,11 +1,13 @@
-import React, {Fragment} from 'react'
-import Header from './Components/Header/Header.jsx'
-import Home from './Components/Home/Home.jsx'
-import Functionality from './Components/Functionality/Functionality.jsx'
-import Apps from './Components/Apps/Apps.jsx'
-import Plans from './Components/Plans/Plans.jsx'
-import Contact from './Components/Contact/Contact.jsx'
-import Footer from './Components/Footer/Footer.jsx'
+import React from "react";
+import {
+  Header,
+  Home,
+  Functionality,
+  Apps,
+  Plans,
+  Contact,
+  Footer,
+} from "./Components";
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </>    
+    </>
   );
 }
 

@@ -1,10 +1,10 @@
 .apps {
   height: 475px;
-  background-color: #EFF8FF;
+  background-color: #eff8ff;
   align-items: center;
 }
 
-.apps-wrapper{
+.apps-wrapper {
   margin: 0 auto;
   max-width: 1170px;
   display: flex;
@@ -13,7 +13,7 @@
   height: 100%;
 }
 
-.apps-info-title{
+.apps-info-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
@@ -27,10 +27,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #6E7275;
+  color: #6e7275;
 }
 
-.apps-info-buttons{
+.apps-info-buttons {
   margin-top: 35px;
 }
 
@@ -41,17 +41,17 @@
 }
 
 @media screen and (max-width: 1170px) {
-  .apps-wrapper{
+  .apps-wrapper {
     padding: 0 24px;
   }
 }
 
 @media screen and (max-width: 940px) {
-  .container-img{
+  .container-img {
     display: none;
   }
 
-  .apps-wrapper{
+  .apps-wrapper {
     justify-content: center;
     margin: 0 auto;
     padding: 0 24px;
@@ -65,12 +65,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: #6E7275;
+    color: #6e7275;
   }
 
   .apps-button {
     margin-right: 0px;
   }
-
 }
-
